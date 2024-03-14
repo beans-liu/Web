@@ -1,0 +1,65 @@
+#top {
+  @apply flex;
+}
+#top button {
+  @apply absolute top-2 left-2 bg-transparent border-transparent z-0;
+}
+.sidebar {
+  @apply fixed w-4/12 bg-gray-200 -translate-x-full transition-transform duration-500 ease-[ease-in-out] z-[999] left-0 inset-y-0;
+  @apply bg-[#fbb9a8];
+}
+
+.sidebar.active {
+  @apply transform translate-x-0 bg-[#fbb9a8] fixed z-[1000]; /* Use a higher z-index value */
+}
+
+.nuxt-link-no-underline {
+  @apply text-black no-underline;
+}
+#appname {
+  @apply text-base;
+}
+.sidebar > div {
+  @apply flex justify-center mb-5 font-microsoft text-lg;
+}
+#list2_img,
+#list3_img,
+#list4_img,
+#list5_img,
+#list6_img,
+#list7_img {
+  @apply pr-1 mr-2;
+}
+h3 {
+  @apply flex justify-center items-center mt-4 mb-0;
+}
+.fixedwrite {
+  @apply fixed inset-0 bg-black h-screen overflow-hidden flex justify-center items-center;
+}
+.write_form_bg {
+  @apply bg-slate-100 flex flex-col items-center justify-center w-1/4 h-1/2 gap-4 rounded-lg;
+}
+.write_form_bg > .btn {
+  @apply bg-blue-700 text-white rounded-lg w-12;
+}
+.write_form_bg > p {
+  @apply font-microsoft text-sm;
+}
+.write_form_bg > div {
+  @apply mx-0.5;
+}
+.input {
+  @apply w-full border rounded px-3 py-2 bg-slate-300;
+}
+.writecatagory > select {
+  @apply w-full border rounded px-3 py-2;
+}
+.type {
+  @apply flex font-microsoft;
+}
+.writeoptions {
+  @apply flex flex-col items-start;
+}
+.writecatagory {
+  @apply flex justify-start space-x-2;
+}

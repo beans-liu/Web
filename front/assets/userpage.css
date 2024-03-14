@@ -1,0 +1,14 @@
+.userimg {
+  @apply w-full flex justify-center items-center;
+}
+.userimg img {
+  width: 10%;
+  height: 10%;
+  border-radius: 50%;
+}
+.button_zone {
+  @apply w-[70%] flex justify-between items-center mx-auto;
+}
+.userdisplay {
+  @apply grid grid-cols-3 gap-4;
+}

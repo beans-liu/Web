@@ -1,0 +1,20 @@
+{
+    "api": {
+        "version": "0.1.0",
+        "privateKey": "koa-api"
+    },
+    "chatGPT": {
+        "token": ""
+    },
+    "db": {
+        "mainDB": {
+            "client": "mysql",
+            "database": "web-app",
+            "host": "34.80.86.39",
+            "password": "web_app_user",
+            "port": 3306,
+            "user": "web_app_member",
+            "ConnectionTimeoutInSecond": 10
+        }
+    }
+}

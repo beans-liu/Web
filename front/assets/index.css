@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  @apply m-0 w-full overflow-x-hidden  bg-[#f7e9e4];
+}
+.white_area {
+  @apply flex items-center text-center justify-between w-full bg-[#f7e9e4] z-0 p-4 relative;
+}
+.white_area p {
+  @apply text-[2rem] m-0;
+}
+
+.recommendation p,
+.following p,
+.hot p {
+  @apply flex-1 text-center text-[2rem] m-0;
+}
+#dark_background {
+  @apply h-full bg-center bg-no-repeat bg-cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://loremflickr.com/320/240");
+}
+hr {
+  @apply h-[0-5px] bg-[#121111] w-4/5 mx-auto my-5 border-[none];
+}
+.background {
+  @apply mt-4 ml-3 flex flex-row items-center gap-4 z-10;
+}
+#search {
+  @apply ml-4 mt-1;
+}
+#searchtext {
+  @apply bg-transparent border-transparent focus:outline-none w-full;
+}
+.searchitem {
+  @apply flex flex-row gap-3;
+}
+.searchbox {
+  @apply bg-gray-200 rounded-lg flex items-center w-full mr-1 h-10;
+}
+.display {
+  @apply grid grid-cols-7 gap-5 ml-10 mr-10; /* You may adjust z-index if needed */
+  grid-template-columns: min-content repeat(5, minmax(0, 1fr)) min-content;
+}
+
+.display > * {
+  @apply min-h-[1/8];
+}
+
+/* Centering items in middle columns */
+.display > :not(:first-child):not(:last-child) {
+  justify-self: center;
+}
+
+.left {
+  @apply -ml-10 h-full w-10 flex items-center;
+}
+
+.left:hover {
+  @apply ml-0 bg-gray-200 h-full z-10 flex flex-row justify-center -ml-10;
+}
+
+.right {
+  @apply -mr-10 h-full w-10 flex items-center;
+}
+
+.right:hover {
+  @apply bg-gray-200 h-full z-10 flex flex-row justify-center -mr-10;
+}
+
+@media (max-width: 640px) {
+  .display {
+    @apply grid grid-cols-1 gap-4;
+  }
+  .left {
+    @apply rotate-90;
+    @apply mx-auto;
+  }
+  .right {
+    @apply rotate-90;
+    @apply mx-auto;
+  }
+}

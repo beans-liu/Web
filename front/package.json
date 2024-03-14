@@ -1,0 +1,37 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "NODE_ENV=production nuxt build",
+    "dev": "NODE_ENV=development nuxt dev --dotenv .env.development",
+    "start": "NODE_ENV=production node .output/server/index.mjs",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "heroku-postbuild": "npm run build"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@nuxtjs/tailwindcss": "^6.10.1",
+    "autoprefixer": "^10.4.16",
+    "nuxt": "^3.8.1",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5",
+    "vue": "^3.3.8",
+    "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "@clerk/clerk-sdk-node": "^4.12.22",
+    "@nuxtjs/auth-next": "^5.0.0-1667386184.dfbbb54",
+    "@nuxtjs/cloudinary": "^2.4.3",
+    "@nuxtjs/composition-api": "^0.33.1",
+    "@pinia/nuxt": "^0.5.1",
+    "@vueuse/core": "^10.7.0",
+    "cloudinary": "^1.41.0",
+    "nuxt-icon": "^0.6.7",
+    "pinia": "^2.1.7",
+    "sweetalert2": "^11.10.1",
+    "vue-clerk": "^0.1.1"
+  }
+}

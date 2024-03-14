@@ -1,0 +1,6 @@
+.white_area {
+  @apply flex justify-between items-center text-center w-screen bg-[white] z-0 p-4;
+}
+.white_area p {
+  @apply flex-1 text-center text-[2rem] m-0;
+}

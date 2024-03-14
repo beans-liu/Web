@@ -1,0 +1,65 @@
+.books {
+  @apply overflow-x-auto;
+}
+.books::-webkit-scrollbar {
+  @apply hidden;
+}
+.btn {
+  @apply bg-transparent border-transparent;
+}
+.books-container {
+  @apply inline-flex;
+}
+.prev-button,
+.next-button {
+  @apply mt-2 cursor-pointer border-none outline-none bg-transparent;
+}
+.block_content {
+  @apply flex items-center gap-4 justify-center flex-col;
+}
+.block {
+  @apply flex items-center gap-4 justify-center;
+}
+.popout_book {
+  @apply rounded-lg fixed left-0 top-0 bottom-0 z-30 h-full w-full bg-white transform translate-y-full transition-transform duration-500 ease-in-out;
+}
+.halfdarkarea {
+  @apply fixed left-0 top-0 bottom-0 z-20 w-full transform translate-y-full transition-transform duration-0 ease-in-out;
+}
+.popout_book.active {
+  @apply transform translate-y-1/3;
+}
+.halfdarkarea.active {
+  @apply transform translate-y-0 bg-black/50;
+}
+.popout_book > div {
+  @apply flex justify-center;
+}
+.bookpic_popout {
+  @apply flex items-center justify-center;
+}
+.popout_book {
+  @apply fixed inset-0  rounded-lg bg-white transition-transform duration-500 ease-in-out transform translate-y-full;
+}
+
+.halfdarkarea {
+  @apply fixed inset-0  transition-transform duration-0 ease-in-out transform translate-y-full;
+}
+.popout_book.active {
+  @apply translate-y-[30%];
+}
+.halfdarkarea.active {
+  @apply translate-y-[0%] bg-[rgba(0,0,0,0.5)];
+}
+.content {
+  @apply flex flex-col items-center justify-center mt-0 pt-0;
+}
+.content > p {
+  @apply w-[70%] whitespace-normal;
+  word-wrap: break-word;
+}
+
+.bookzone {
+  @apply fixed left-0 top-0 bottom-0;
+  z-index: 10;
+}
